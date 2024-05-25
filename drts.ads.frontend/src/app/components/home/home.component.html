@@ -1,0 +1,14 @@
+<p>home works!</p>
+<tr *ngFor="let ad of ads$ | async">
+
+    <div class="card">
+      <h2>{{ ad.title }}</h2>
+      <img src="https://i.ibb.co/wR8sRRM/placeholder-image.png" alt="Card Image">
+      <div class="card-content">
+        <p>{{ ad.description }}</p>
+        <a href="{{ ad.link }}">Saiba mais</a>
+      </div>
+    </div>
+  
+  </tr>
+  
