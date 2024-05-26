@@ -8,19 +8,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditComponent } from './components/edit/edit.component';
+import { AdmComponent } from './components/adm/adm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RegisterComponent,
-    EditComponent
+    EditComponent,
+    AdmComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule  
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

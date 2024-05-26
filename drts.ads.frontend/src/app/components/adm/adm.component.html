@@ -1,0 +1,15 @@
+<tr *ngFor="let ad of ads$ | async">
+
+    <div class="card">
+      <h2>{{ ad.title }}</h2>
+      <img src="https://scontent.ffbe4-1.fna.fbcdn.net/v/t45.1600-4/434426471_120209244881940671_459259574751536018_n.png?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF650MW2oIkJwx9xnEDBiVYZn2gGkve5RZmfaAaS97lFhe1nVyEePxWEfnmxS85kGUVX2UKIdLcylDIkBgBm6IR&_nc_ohc=HCnc_eeqwvUQ7kNvgH8jFS6&_nc_ht=scontent.ffbe4-1.fna&edm=AJNyvH4EAAAA&oh=00_AYAcyQqx4lR2adAI3o1b7C2lnjB7BExSqKCHi7xCzsV_KQ&oe=66589782" alt="Card Image">
+      <div class="card-content">
+        <p>{{ ad.description }}</p>
+        <a [routerLink]="['/register', ad.id]">Editar</a>
+        <a class="delete" (click)="delete(ad.id)" >Excluir</a>
+   
+      </div>
+    </div>
+  
+</tr>
+  

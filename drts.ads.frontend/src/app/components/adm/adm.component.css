@@ -1,0 +1,76 @@
+/* Estilo padrão para cards */
+.card {
+    width: 300px; /* Largura original */
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #464444;
+    color: #fff;
+  }
+  
+  /* Responsividade para telas maiores */
+  @media (min-width: 600px) {
+    .card {
+      margin: 20px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .card {
+      margin: 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      margin: 20px;
+    }
+  }
+  
+  /* Estilo dos elementos internos dos cards */
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    background-color: #464444;
+    color: #fff;
+  }
+  
+  .card-content a {
+    padding: 8px;
+    background-color: #c5bc3a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-right: 6px; 
+  }
+  
+  .card-content a:hover {
+    background-color: #c4d42f;
+  }
+  
+  .delete {
+    background-color: rgb(209, 36, 36) !important;
+    padding: 8px;
+  }
+
+  .delete:hover{
+    background-color: rgb(247, 58, 58) !important;
+  }

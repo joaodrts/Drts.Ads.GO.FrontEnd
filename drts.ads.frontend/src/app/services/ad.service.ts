@@ -48,6 +48,13 @@ export class AdService {
       );
   }
 
+  delete(id: string): Observable<any> {
+    return this.httpClient.delete<Ad>(this.url + "/" + id)
+      .pipe(
+        catchError(this.handleError())
+      );
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error);
