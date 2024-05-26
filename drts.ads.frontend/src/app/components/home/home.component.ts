@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Ad } from 'src/app/models/ad.type';
 import { AdService } from 'src/app/services/ad.service';
@@ -8,12 +8,15 @@ import { AdService } from 'src/app/services/ad.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   ads$ = new Observable<Ad[]>();
 
-  constructor(private adService: AdService){
-    this.ads$ = this.adService.getAll();
+  constructor(private rest: AdService) {
+  }
+
+  ngOnInit(): void {
+    this.ads$ = this.rest.getAll(); 
   }
 
 }

@@ -1,13 +1,6 @@
-tr {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 /* Estilo padrão para cards */
 .card {
-  width: 100%;
-  max-width: 300px;
+  width: 300px; /* Largura original */
   margin: 20px;
   padding: 15px;
   border-radius: 8px;
@@ -19,19 +12,19 @@ tr {
 /* Responsividade para telas maiores */
 @media (min-width: 600px) {
   .card {
-      width: calc(50% - 40px); /* 50% da largura menos a margem */
+    margin: 20px;
   }
 }
 
 @media (min-width: 900px) {
   .card {
-      width: calc(33.33% - 40px); /* 33.33% da largura menos a margem */
+    margin: 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .card {
-      width: calc(25% - 40px); /* 25% da largura menos a margem */
+    margin: 20px;
   }
 }
 
@@ -58,7 +51,7 @@ tr {
 }
 
 .card-content a {
-  padding: 8px 16px;
+  padding: 8px;
   background-color: #007bff;
   color: #fff;
   border: none;
