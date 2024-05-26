@@ -13,11 +13,7 @@ export class HomeComponent {
   ads$ = new Observable<Ad[]>();
 
   constructor(private adService: AdService){
-    this.obterAds();
-  }
-
-  obterAds(){
-    this.ads$ = this.adService.obterAds();
+    this.ads$ = this.adService.getAll();
   }
 
 }

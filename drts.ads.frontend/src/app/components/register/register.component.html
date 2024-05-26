@@ -1,1 +1,39 @@
-<p>register works!</p>
+<div class="ad-register">
+    <h2>Register Ad</h2>
+    <form [formGroup]="adForm" (ngSubmit)="onSubmit()">
+  
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" formControlName="title" />
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="date_start">Start Date</label>
+        <input id="date_start" type="date" formControlName="date_start" />
+      </div>
+  
+      <div class="form-group">
+        <label for="date_end">End Date</label>
+        <input id="date_end" type="date" formControlName="date_end" />
+      </div>
+
+  
+      <div class="form-group">
+        <label for="link">Link</label>
+        <input id="link" type="url" formControlName="link" />
+      </div>
+
+     <!-- <div class="form-group">
+        <label for="image">Image</label>
+        <input type="file" id="image" (change)="onImageSelected($event)" />
+      </div>
+  -->
+      <button type="submit" [disabled]="adForm.invalid">Submit</button>
+    </form>
+  </div>
+  

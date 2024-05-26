@@ -1,52 +1,73 @@
 tr {
-    display: flexbox;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilo padrão para cards */
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #464444;
+  color: #fff;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 600px) {
   .card {
-    width: 300px;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #464444;
-    color: #fff;
+      width: calc(50% - 40px); /* 50% da largura menos a margem */
   }
-  
-  .card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  .card {
+      width: calc(33.33% - 40px); /* 33.33% da largura menos a margem */
   }
-  
-  .card img {
-    width: 100%;
-    border-radius: 8px;
+}
+
+@media (min-width: 1200px) {
+  .card {
+      width: calc(25% - 40px); /* 25% da largura menos a margem */
   }
-  
-  .card-content {
-    margin-top: 10px;
-  }
-  
-  .card-content p {
-    font-size: 1rem;
-    line-height: 1.4;
-    background-color: #464444;
-    color: #fff;
-  }
-  
-  .card-content a {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-  }
-  
-  .card-content a:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+/* Estilo dos elementos internos dos cards */
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #464444;
+  color: #fff;
+}
+
+.card-content a {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  background-color: #0056b3;
+}

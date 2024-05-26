@@ -5,6 +5,7 @@ export type Ad = {
     date_start: string,
     date_end: string,
     status: string,
-    link: string
+    link: string,
+    //image: File | null
   }
   
