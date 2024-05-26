@@ -10,8 +10,6 @@ import { AdService } from 'src/app/services/ad.service';
 })
 export class EditComponent implements OnInit {
 
-  //ad: Ad | undefined;
-
   adForm: FormGroup;
 
   constructor(public rest: AdService, private route: ActivatedRoute, private fb: FormBuilder, private router: Router){
