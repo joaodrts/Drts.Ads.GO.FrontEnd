@@ -8,7 +8,7 @@ import { Observable, catchError, of, retry } from 'rxjs';
 })
 export class AdService {
 
-  private url = "http://localhost:9000/ads";
+  private url = "http://15.229.43.203:9000/ads";
 
   constructor(private httpClient: HttpClient){
   }
